@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="keywords" content="корги, милый, триколор">
+      <meta name="author" content="Andrey Ivanov">
+      <title> Домашняя страница хорошего мальчика </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <style>
+         body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+         }
+
+         .container {
+            width: 80vw;
+            margin: 80px auto 0 auto;
+         }
+
+         .header {
+            line-height: 80px;
+            position: fixed;
+            text-align: center;
+            background-color: #fff;
+            width: 100vw;
+            top: 0;
+            left: 0;
+         }
+
+         .header__content {
+            margin: 0;
+         }
+
+         .picture {
+            text-align: center;
+         }
+
+         .picture__content {
+            cursor: pointer;
+            border-radius: 50%;
+            width: 400px;
+            height: 400px;
+            object-fit: cover;
+         }
+
+         .picture__content:hover {
+            transition: all ease-in-out 0.3s;
+            box-shadow: 10px 16px 8px 0px rgba(34, 60, 80, 0.2);
+         }
+
+         .quotes {
+            list-style-type: none;
+            padding: 0;
+         }
+
+         .quote {
+            display: block;
+            position: relative;
+            padding-left: 100px;
+            margin-bottom: 20px;
+            height: 40px;
+            line-height: 40px;
+         }
+
+         .quote::before {
+            content: "";
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 80px;
+            height: 40px;
+            background-image: url("img/quote.png");
+            background-size: 80px 40px;
+         }
+      </style>
+   </head>
+   <body>
+      <header class="header">
+         <h1 class="header__content">Домашняя страница хорошего мальчика</h1>
+      </header>
+      <div class="container">
+         <main>
+            <section>
+               <figure class="picture">
+                  <img class="picture__content" src="./img/boy.jpg" width="400" alt="Фотография Реджи">
+                  <figcaption>Его ворсейшество Реджис I</figcaption>
+               </figure>
+               <hr />
+            </section>
+            <section>
+               <h2> Обо мне </h2>
+               <p> Привет! Меня зовут Реджи и я хороший мальчик! </p>
+            </section>
+            <section>
+               <ul class="quotes">
+                  <li><q class="quote">Ауууу</q></li>
+                  <li><q class="quote">Гав!</q></li>
+                  <li><q class="quote">Ррррр!</q></li>
+               </ul>
+            </section>
+            <section style="display: none;">
+               <h2> Мои путешествия </h2>
+               <p> К моему великому сожалению, мама с папой часто путешевствуют без меня. И оставляют меня на передержке.
+                  Но иногда мне удаётся уГАВорить их взять меня с собой! </p>
+               <table>
+                  <thead>
+                     <tr>
+                        <th>Название места</th>
+                        <th>Описание</th>
+                        <th>Фото</th>
+                     </tr>
+                  </thead>
+                  <tbody>
+                     <tr>
+                        <td>Судак</td>
+                        <td>Мыс Меганом и бескрайние степи</td>
+                        <td><img width="300" src="./img/sudak.jpg" alt="Судак"></td>
+                     </tr>
+                     <tr>
+                        <td>Марсианское озеро</td>
+                        <td>Раньше здесь был карьер, а теперь большое искусственное озеро.
+                            У папы там был корпоратив, папина команда выиграла гонку в аквапарке!</td>
+                        <td><img width="300" src="./img/mars.jpg" alt="Марсианское озеро"></td>
+                     </tr>
+                  </tbody>
+               </table>
+            </section>
+         </main>
+         <hr />
+         <footer>
+            <h4> Мои соцсети! </h4>
+            <ul>
+               <li><a href="https://www.instagram.com/gorgeous.regis/">Instagram!</a></li>
+               <li><a href="#">Вконтакте!</a></li>
+               <li><a href="#">Twitter!</a></li>
+            </ul>
+            <a href="https://tensor.ru/" target="_blank">Tensor</a>
+             School
+         </footer>
+      </div>
+   </body>
+</html>
